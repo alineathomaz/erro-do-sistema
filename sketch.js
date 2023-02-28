@@ -51,7 +51,7 @@ function draw() {
  
 }
 
-function  keypressed();{
+function  keypressed(){
 	if (keycode === UP_ARROM) {
 		Matter.Body.applyForce(ball, ball.position, {x:85, y:-85});
 	}
