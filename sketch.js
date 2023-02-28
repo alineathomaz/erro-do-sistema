@@ -9,14 +9,16 @@ var grondObj, leftSide, rightSide;
 var world;
 var radius = 40;
 
+/* essa função está vazia, não tem necessidade dela
 function preload()
 {
 	
 }
+*/
 
 function setup() {
 	createCanvas(1600, 700);
-
+	rectMode(CENTER); //faltou esse comando
 
 	engine = Engine.create();
 	world = engine.world;
@@ -43,6 +45,9 @@ function draw() {
   rectMode(CENTER);
   background(0);
 
+  ellipse(ball.position.x,ball.position.y,radius,radius); //comando para desenhar a bolinha de papel na tela
+	
+  rectMode(CENTER);
   grondObj.display();
   leftSide.display();
   rightSide.display();
